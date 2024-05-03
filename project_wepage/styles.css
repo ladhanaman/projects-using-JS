@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+.btn {
+  transition: all 300ms ease;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.projects-container {
+  max-height: 500px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  width: calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px; /* Add space between card and image */
+}
+
+.project h2 {
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.project p {
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  text-align: justify;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .projects-wrapper {
+    justify-content: center;
+  }
+  .project {
+    width: calc(100% - 20px);
+  }
+}
